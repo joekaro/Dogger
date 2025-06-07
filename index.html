@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/dogger.ico" type="image/x-icon">
     <!-- font-awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- AOS -->
@@ -13,7 +13,7 @@
     <title>Dogger</title>
 </head>
 <body>
-    <header>
+    <header class="topnav" id="myTopnav">
         <div class="container">
             <div class="logo">
             <a href="index.html">Dogger <span>.</span></a>
@@ -25,6 +25,7 @@
                <li><a href="#Trainers">Trainers</a></li>
                <li><a href="#Services">Services</a></li>
                <li><a href="#form">Contact</a></li>
+               <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
             </ul>
         </div>
         </div>
@@ -41,6 +42,7 @@
             </div>
         </div>
      </section>
+     
      <!-- Welcome -->
       <section id="welcome" data-aos="fade-up" data-aos-duration="2000">
         <i class="fa fa-paw  rotate-left"></i>
@@ -90,7 +92,9 @@
         <section id="About-Us">
             <div class="container">
             <div class="about-left" data-aos="fade-left" data-aos-duration="2000">
+               <i class="fa fa-paw  rotate-left"></i>
                <i class="fa fa-paw"></i>
+               <i class="fa fa-paw  rotate-right"></i>
                 <h2>About Us</h2>
                 <h4>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h4>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
@@ -496,6 +500,15 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    function myFunction(){
+        var x =
+        document.getElementById("myTopnav");
+    if (x.className === "topnav"){
+        x.className += "responsive";
+    }else{
+        x.className = "topnav"
+    }
+    }
   AOS.init();
 </script>
 </body>
