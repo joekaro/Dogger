@@ -10,6 +10,7 @@
 html,body{
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 :root{
     --main-color:#a1bfbd;
@@ -1132,8 +1133,12 @@ footer .container .bottom i{
 
 /* media Query */
 /* media Query */
-@media screen and (max-width:600px) {
-   .container{
+@media screen and (max-width:600px)
+ {
+html,body{
+    overflow-x: hidden;
+}
+.container{
      width: 95%;
      margin: 0 auto;
 }
@@ -1762,7 +1767,7 @@ header .container .links ul li a{
     
 }
 #FAQ .container .FAQ-text1 ul li{
-    font-size: 18px;
+    font-size: 18 px;
     margin-bottom: 26px;
     color: var(--black-color);
 }
@@ -1846,8 +1851,8 @@ header .container .links ul li a{
 #customers .container .customer-box2 .text .arrow,
 #customers .container .customer-box3 .text .arrow{
     position: absolute;
-    width: 120px;
-    height: 100px;
+    width: 90px;
+    height: 80px;
     top: 35px;
     left: 70px;
     background: var(--main-color);
