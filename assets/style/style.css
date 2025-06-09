@@ -1768,7 +1768,7 @@ header .container .links ul li a{
 }
 #FAQ .container .FAQ-text1 ul li{
     font-size: 18 px;
-    margin-bottom: 26px;
+    margin-bottom: 16px;
     color: var(--black-color);
 }
 #FAQ .container .FAQ-img {
@@ -1853,7 +1853,7 @@ header .container .links ul li a{
     position: absolute;
     width: 90px;
     height: 80px;
-    top: 35px;
+    top: 64px;
     left: 70px;
     background: var(--main-color);
     transform: rotate(45deg);
