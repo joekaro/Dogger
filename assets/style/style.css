@@ -2257,7 +2257,7 @@ header .container .links ul li a{
  }
  #form .container .form .form-input form .name-input input{
     height: 40px;
-    width: 130px;
+    width: 145px;
     border: none;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -2268,14 +2268,14 @@ header .container .links ul li a{
 }
 #form .container .form .form-input form .other-input input{
      height: 40px;
-     width: 280px;
+     width: 300px;
      border: none;
      margin-bottom: 5px;
      border-radius: 10px;
 }
 #form .container .form .form-input form .other-input textarea{
     height: 100px;
-    width: 280px;
+    width: 300px;
     border: none;
     padding: 2px 5px;
 }
